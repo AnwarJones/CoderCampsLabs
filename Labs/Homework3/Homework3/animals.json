@@ -1,0 +1,20 @@
+﻿{
+    "Dog": [
+        { "name":"dog", "hasFur":true, "legNumber":4, "hasTail":true, "longTongue":true},
+    ],
+    "Cat": [
+        { "name": "cat", "hasFur": true, "legNumber": 4, "hasTail": true, "longTongue": false},
+    ],
+    "Frog": [
+        { "name": "frog", "hasFur": false, "legNumber": 4, "hasTail": false, "longTongue": true },
+    ],
+    "Horse": [
+        { "name": "horse", "hasFur": true, "legNumber": 4, "hasTail": true, "longTongue": false },
+    ],
+    "Snake": [
+        { "name": "snake", "hasFur": false, "legNumber": 0, "hasTail": false, "longTongue": true },
+    ],
+
+
+
+}

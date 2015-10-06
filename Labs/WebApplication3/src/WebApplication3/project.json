@@ -1,0 +1,87 @@
+{
+    "webroot": "wwwroot",
+    "userSecretsId": "aspnet5-WebApplication3-f3bfd0eb-11e7-447b-9fad-33eafd258bb5",
+    "version": "1.0.0-*",
+
+    "dependencies": {
+        "EntityFramework.SqlServer": "7.0.0-beta5",
+        "EntityFramework.Commands": "7.0.0-beta5",
+        "Microsoft.AspNet.Mvc": "6.0.0-beta5",
+        "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta5",
+        "Microsoft.AspNet.Authentication.Cookies": "1.0.0-beta5",
+        "Microsoft.AspNet.Authentication.Facebook": "1.0.0-beta5",
+        "Microsoft.AspNet.Authentication.Google": "1.0.0-beta5",
+        "Microsoft.AspNet.Authentication.MicrosoftAccount": "1.0.0-beta5",
+        "Microsoft.AspNet.Authentication.Twitter": "1.0.0-beta5",
+        "Microsoft.AspNet.Diagnostics": "1.0.0-beta5",
+        "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-beta5",
+        "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta5",
+        "Microsoft.AspNet.Server.IIS": "1.0.0-beta5",
+        "Microsoft.AspNet.Server.WebListener": "1.0.0-beta5",
+        "Microsoft.AspNet.StaticFiles": "1.0.0-beta5",
+        "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta5",
+        "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta5",
+        "Microsoft.Framework.Configuration.Json": "1.0.0-beta5",
+        "Microsoft.Framework.Configuration.UserSecrets": "1.0.0-beta5",
+        "Microsoft.Framework.Logging": "1.0.0-beta5",
+        "Microsoft.Framework.Logging.Console": "1.0.0-beta5",
+        "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-beta5"
+    },
+
+    "commands": {
+        "web": "Microsoft.AspNet.Hosting --config hosting.ini",
+        "ef": "EntityFramework.Commands"
+    },
+
+    "frameworks": {
+        "dnx451": {
+            "frameworkAssemblies": {
+                "Accessibility": "4.0.0.0",
+                "CustomMarshalers": "4.0.0.0",
+                "ISymWrapper": "4.0.0.0",
+                "Microsoft.Activities.Build": "4.0.0.0",
+                "Microsoft.Build.Conversion.v4.0": "4.0.0.0",
+                "Microsoft.Build": "4.0.0.0",
+                "Microsoft.Build.Engine": "4.0.0.0",
+                "Microsoft.Build.Framework": "4.0.0.0",
+                "Microsoft.Build.Tasks.v4.0": "4.0.0.0",
+                "Microsoft.Build.Utilities.v4.0": "4.0.0.0",
+                "Microsoft.JScript": "10.0.0.0",
+                "Microsoft.VisualBasic": "10.0.0.0",
+                "Microsoft.VisualBasic.Compatibility": "10.0.0.0",
+                "Microsoft.VisualBasic.Compatibility.Data": "10.0.0.0",
+                "Microsoft.VisualC": "10.0.0.0",
+                "Microsoft.VisualC.STLCLR": "2.0.0.0",
+                "PresentationBuildTasks": "4.0.0.0",
+                "PresentationCore": "4.0.0.0",
+                "PresentationFramework": "4.0.0.0",
+                "PresentationFramework.Aero": "4.0.0.0",
+                "presentationframework.aero2": "4.0.0.0",
+                "presentationframework.aerolite": "4.0.0.0",
+                "PresentationFramework.Classic": "4.0.0.0",
+                "PresentationFramework.Luna": "4.0.0.0",
+                "PresentationFramework.Royale": "4.0.0.0",
+                "ReachFramework": "4.0.0.0",
+                "sysglobl": "4.0.0.0",
+                "System.Activities": "4.0.0.0"
+            }
+        },
+        "dnxcore50": { }
+    },
+
+    "exclude": [
+        "wwwroot",
+        "node_modules",
+        "bower_components"
+    ],
+    "publishExclude": [
+        "node_modules",
+        "bower_components",
+        "**.xproj",
+        "**.user",
+        "**.vspscc"
+    ],
+    "scripts": {
+        "prepublish": [ "npm install", "bower install", "gulp clean", "gulp min" ]
+    }
+}

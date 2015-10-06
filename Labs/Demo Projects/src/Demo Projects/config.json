@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "Demo_Projects"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-Demo_Projects-230ab916-6da0-4bbb-a6ee-e60ada3065cb;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html ng-app="MoviesApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+
+
+    </style>
+    <link href="../../style.css" rel="stylesheet" />
+</head>
+<body ng-controller="PetController as vm"><!--vm is just a variable name, it can be anything-->
+    
+    <table>
+        <tr ng-repeat="pet in vm.pets">
+            <td>{{pet.name}}</td>
+            <td><table>
+                <tr ng-repeat="animal in pet.animals">
+                    <td>{{animal.name}}</td>
+                    <td><img ng-src="{{animal.src}}" /></td>
+                
+                </tr>
+                </table></td>
+        </tr>
+        
+        
+        
+
+    </table>
+
+    </ul>
+    
+    <script src="../../Scripts/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+    
+</body>
+</html>

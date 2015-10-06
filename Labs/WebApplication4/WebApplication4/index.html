@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <!--Add Car -->
+                <div class="form-group">
+                    <h2>Describe Your Car</h2>
+                    
+                    <p>Car Model Name <input class="right" type="text" id="carName" /></p>
+                    <p>Car Weight <input class="right" type="number" id="carWeight" /></p>
+                    <p>Car Color <input class="right" type="color" id="carColor" /></p>
+                    <p>Car Body Style <input class="right" type="text" id="carBody" /></p>
+                    <p>Number of Doors <input class="right" type="text" id="carDoor" /></p>
+
+                    <button class="btn btn-lg right" id="submit" onclick="addCar()">Submit</button>
+
+                </div><br /><br /><br />
+                <!--Add Truck -->
+                <div class="form-group">
+                    <h2>Describe Your Truck</h2>
+                    
+                    <p>Truck Model Name <input class="right" type="text" id="truckName" /></p>
+                    <p>Truck Weight <input class="right" type="text" id="truckWeight" /></p>
+                    <p>Truck Color <input class="right" type="color" id="truckColor" /></p>
+                    <p>Truck Towing Capacity <input class="right" type="text" id="truckTowing" /></p>
+                    <p>Engine Arrangement <input class="right" type="text" id="truckEngine" /></p>
+
+                    <button class="btn btn-lg right" id="submit" onclick="addTruck()">Submit</button>
+
+                </div><br /><br /><br />
+                <!--Add SUV -->
+                <div class="form-group">
+                    <h2>Describe Your SUV</h2>
+                    
+                    <p>SUV Model Name <input class="right" type="text" id="suvName" /></p>
+                    <p>SUV Weight <input class="right" type="number" id="suvWeight" /></p>
+                    <p>SUV Color <input class="right" type="color" id="suvColor" /></p>
+                    <p>Seating Capacity <input class="right" type="text" id="suvSeating" /></p>
+                    <p>SUV Size Style <input class="right" type="text" id="suvStyle" /></p>
+
+                    <button class="btn btn-lg right" id="submit" onclick="addMotorcycle()">Submit</button>
+
+                </div><br /><br /><br />
+                <!--Add Boat -->
+                <div class="form-group">
+                    <h2>Describe Your Boat</h2>
+                    
+                    <p>Boat Model Name <input class="right" type="text" id="boatName" /></p>
+                    <p>Boat Weight <input class="right" type="number" id="boatWeight" /></p>
+                    <p>Boat Color <input class="right" type="color" id="boatColor" /></p>
+                    <p>Boat Engine Type <input class="right" type="text" id="boatEngine" /></p>
+                    <p>Boat Style <input class="right" type="text" id="boatStyle" /></p>
+
+                    <button class="btn btn-lg right" id="submit" onclick="addBoat()">Submit</button>
+
+                </div><br /><br /><br />
+                <!--Add Motorcycle -->
+                <div class="form-group">
+                    <h2>Describe Your Motorcycle</h2>
+                    
+                    <p>Motorcycle Model Name <input class="right" type="text" id="motoName" /></p>
+                    <p>Motorcycle Weight <input class="right" type="number" id="motoWeight" /></p>
+                    <p>Motorcycle Color <input class="right" type="color" id="motoColor" /></p>
+                    <p>Motorcycle Engine Type <input class="right" type="text" id="motoEngine" /></p>
+                    <p>Motorcycle Style <input class="right" type="text" id="motoStyle" /></p>
+
+                    <button class="btn btn-lg right" id="submit" onclick="addMotorcycle()">Submit</button>
+
+                </div>
+            </div> 
+        </div>
+    </div>
+        
+
+    <script src="JS/vehicle.js"></script>
+</body>
+</html>

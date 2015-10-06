@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html ng-app="EventsApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body ng-controller="FavoriteColorController as vm">
+    <button ng-click="vm.pick('red')">Red</button>
+    <button ng-click="vm.pick('blue')">Blue</button>
+    <button ng-click="vm.pick('green')">Green</button>
+
+    <hr />
+
+    {{vm.selectedColor}}
+
+    </hr>
+    <form ng-submit="vm.submitForm()">
+        <input ng-model="vm.newSandwich.eggSalad" />
+        <input type="submit" value="Save" />
+
+    </form>
+
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="ngApps/EventsApp/apps.js"></script>
+    <script src="ngApps/EventsApp/controllers.js"></script>
+</body>
+</html>
